@@ -1,27 +1,6 @@
-@media (min-width: 600px) {
-    body{color:#666666; font-family:Verdana,Arial,sans-serif;}
-    header{background:url(image/header.webp) right no-repeat, #24014d; color:#FFFFFF; font-family:Georgia,serif; height: 72px;}
-    h1{text-align: center; padding-top: .5em;}
-    nav{width: 50%; margin: auto;}
-    nav ul{display: flex; flex-direction: row;}
-    h2{color:#1976D2; font-family:Georgia,serif;}
-    dt{color:#002171; font-weight:bold;}
-    .resort{color:#1976D2; font-size:1.2em;}
-    footer{font-size:.70em; font-style:italic; text-align: center; padding: 1em;}
-    h3{font-family: Georgia, serif;}
-    main{padding-left: 2em; padding-right: 2em; display: block;}
-    #homehero{height: 300px; background: url(image/homehero.webp) no-repeat; background-size: 100% 100%;}
-    nav a{text-decoration: none;}
-    #bio img{float: right}
-    table{margin: auto;}
-    td{padding-right: 90px; padding-bottom: 10px;}
-}
-
-
 nav{position: relative;}
 nav ul{list-style-type: none; display: flex; flex-direction: column;}
 nav li{padding-bottom: 5px; font-size: 1.1em; margin: auto; font-weight:bold;}
-#homehero{height: 150px;}
 body{color:#666666; font-family:Verdana,Arial,sans-serif;}
 header{background:url(image/header.webp) right no-repeat, #24014d; color:#FFFFFF; font-family:Georgia,serif; height: 72px;}
 h1{text-align: center; padding-top: .5em;}
@@ -36,3 +15,12 @@ nav a{text-decoration: none;}
 #bio img{display: inline;}
 table{margin: auto;}
 td{padding-right: 90px; padding-bottom: 10px; display: flex; flex-direction: column; padding-right: 0;}
+
+@media (min-width: 600px) {
+    nav{width: 50%; margin: auto;}
+    nav ul{flex-direction: row;}
+    .resort{color:#1976D2; font-size:1.2em;}
+    #homehero{height: 300px;}
+    #bio img{float: right;}
+    td{padding-right: 90px; padding-bottom: 10px; display: table-cell;}
+}
